@@ -1,1 +1,92 @@
-# PU-GCF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who am I?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --primary: rgb(34, 34, 74);
+        }
+
+        .navbar{
+            background-color: white;
+        }
+        .nav-icon i{
+            color: var(--primary);
+        }
+        .nav-links a{
+            color: var(--primary);
+        }
+        .nav-links a:hover{
+            transform: scale(1.3);
+            text-shadow: 2px 2px 15px var(--primary);
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-icon"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="nav-links">
+            <a class="nav-link" href="home.html">Who am I?</a>
+            <a class="nav-link" href="skills.html">Skills</a>
+            <a class="nav-link" href="companies.html">Companies</a>
+            <a class="nav-link" href="networth.html" id="last-link">Networth</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="img">
+            <img src="./imgs/elon.jpg" alt="">
+        </div>
+        <div class="hero-text">
+            <h1>Hey!</h1>
+            <p>You found me!</p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-text" id="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos veniam similique qui laudantium, laboriosam provident cum facilis illo. Architecto eum dignissimos assumenda eaque aperiam a ullam esse quasi quo officia minima non reprehenderit impedit qui sequi sapiente vitae dicta enim mollitia, veniam consequuntur beatae. Ipsum perspiciatis culpa neque, sit natus facilis modi labore eos dignissimos? Iure consequuntur nulla nesciunt dolorem.</p>
+        </div>
+        <div class="about-by">
+            <p>
+                - Elon Musk
+            </p>
+        </div>
+        <div class="about-contact">
+            <div class="about-contact-text">
+                Contact me
+            </div>
+            <div class="about-contact-icon">
+                <div class="about-icon"><i class="fa-brands fa-facebook"><a href=""></a></i></div>
+                <div class="about-icon"><i class="fa-brands fa-whatsapp"><a href=""></a></i></div>
+                <div class="about-icon"><i class="fa-solid fa-phone"><a href=""></a></i></div>
+                <div class="about-icon"><i class="fa-solid fa-envelope"><a href=""></a></i></div>
+                <div class="about-icon"><i class="fa-brands fa-x-twitter"><a href=""></a></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message">
+        <h1 class="msg-heading">
+            Leave a message here!
+        </h1>
+        <form class="msg-box" action="home.html">
+            <div class="msg-input">
+                <input type="text" name="" id="" placeholder="Name...">
+            </div>
+            <div class="msg-input">
+                <input type="text" name="" id="" placeholder="Email...">
+            </div>
+            <div class="msg-txt-area">
+                <textarea name="" id="">Message ...</textarea>
+            </div>
+            <div class="msg-btn">
+                <button>Send</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
