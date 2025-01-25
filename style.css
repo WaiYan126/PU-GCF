@@ -1,0 +1,458 @@
+/* Basic structure */
+
+html{
+    scroll-behavior: smooth;
+}
+@keyframes load {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+    animation-name: load;
+    animation-duration: 1.2s;
+}
+:root{
+    --primary: rgb(34, 34, 74);
+}
+
+.navbar{
+    padding: 25px 150px 25px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+.nav-links a, .nav-icon i{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    transition: 400ms;
+}
+
+.nav-links a:hover{
+    transform: scale(1.3);
+    text-shadow: 5px 5px 15px rgb(196, 238, 255);
+}
+
+#last-link{
+    margin-right: 0;
+}
+
+
+/* Home page */
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 45px 150px 45px 150px;
+}
+.hero .img{
+    width: 200px;
+    height: 100px;
+}
+.hero .img img{
+    width: 100%;
+    position: relative;
+    bottom: 75px;
+}
+.hero h1{
+    font-size: 4rem;
+    line-height: 6rem;
+    letter-spacing: 0.6rem;
+}
+.hero p{
+    font-weight: normal;
+    font-size: 1.3rem;
+    letter-spacing: 0.6rem;
+}
+
+.hero-text *{
+    color: white;
+}
+
+.about{
+    padding: 125px 150px 25px 150px;
+}
+
+#about-text p{
+    color: rgb(130, 130, 130);
+    line-height: 1.8rem;
+}
+
+.about-by{
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-contact, .about-contact-icon{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.about-contact-text, .about-icon{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.about-icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.message{
+    padding: 25px 150px;
+}
+
+.msg-heading{
+    margin-bottom: 30px;
+}
+
+.msg-box{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto;
+    align-items: start;
+}
+
+.msg-input input, .msg-txt-area textarea,.msg-btn button{
+    padding: 10px 15px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.msg-input input::placeholder{
+    color: gray;
+}
+
+.msg-txt-area textarea{
+    width: 20vw;
+    height: 120px;
+}
+
+.msg-btn button{
+    color: white;
+    background: var(--primary);
+    border: 2px solid transparent;
+    transition: 400ms;
+}
+
+.msg-btn button:hover{
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+
+
+/* Skills page */
+
+.skills{
+    padding: 35px 150px 0;
+}
+
+.skills-heading{
+    padding: 65px 150px 0;
+    font-size: 1.2rem;
+}
+
+.skills-heading h1{
+    color: var(--primary);
+}
+
+.progress-bar:hover{
+    box-shadow: 2px 0px 20px rgb(103, 103, 103);
+}
+
+.progress-label{
+    margin-bottom: 10px;
+}
+.bar{
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--primary);
+}
+.bar1{
+    width: 86%;
+}
+.bar2{
+    width: 92%;
+}
+.bar3{
+    width: 96%;
+}
+.bar4{
+    width: 90%;
+}
+.bar5{
+    width: 92%;
+}
+
+
+
+/* Companies page */
+
+.company-heading{
+    padding: 65px 150px 0;
+    font-size: 1.2rem;
+}
+
+.company-heading h1{
+    color: var(--primary);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 150px;
+}
+
+.gallery-img img{
+    width: 23vw;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px var(--primary);
+}
+
+
+.gallery-item:hover{
+    transform: translateY(-20px) scale(1.1);
+    box-shadow: 2px 2px 30px rgb(88, 88, 88);
+}
+
+.gallery-txt{
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery-txt .title, .gallery-txt .date{
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.gallery-txt .date{
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+}
+
+.button button{
+    background-color: transparent;
+    border: 0;
+    margin: 10px;
+}
+
+.button button a{
+    background-color: var(--primary);
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 400ms;
+    color: white;
+    text-decoration: none;
+}
+
+.button button a:hover{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background: transparent;
+}
+
+
+.progress-bar{
+    display: block;
+    width: 70vw;
+    height: 25px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 200ms;
+}
+
+
+
+/* Networth */
+
+
+.networth-hero, .networth-chart{
+    padding: 50px 150px 25px 150px;
+}
+
+.networth-hero{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.networth-hero * {
+    color: white;
+}
+
+.networth-hero-txt .networth-name{
+    font-size: 3rem;
+}
+
+.networth-position{
+    margin-bottom: 30px;
+}
+
+.networth-money{
+    font-size: 2rem;
+}
+
+.networth-hero-img img{
+    width: 30vw;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.networth-chart-img img{
+    width: 100%;
+}
+
+
+/* For responsive design */
+
+@media screen and (max-width: 1024px) {
+    .navbar,  .hero, .about, .message, .networth-hero, .networth-chart{
+        padding: 25px 65px 25px 65px;
+    }
+    .gallery, .company-heading, .skills-heading, .skills{
+        padding: 65px 65px;
+    }
+    
+    .hero .img{
+        width: 150px;
+        height: 75px;
+    }
+    .hero .img img{
+        width: 100%;
+        position: relative;
+        bottom: 60px;
+    }
+    .about-icon{
+        margin-right: 40px;
+    }
+    .company-heading, .skills-heading{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 862px) {
+    .navbar, .hero, .about, .message, .networth-hero, .networth-chart{
+        padding: 25px 50px 25px 50px;
+    }
+    .gallery, .company-heading, .skills-heading, .skills{
+        padding: 65px 50px;
+    }
+    
+    .hero .img{
+        width: 120px;
+        height: 50px;
+    }
+    .hero .img img{
+        width: 100%;
+        position: relative;
+        bottom: 60px;
+    }
+    .about-icon{
+        margin-right: 30px;
+    } 
+    .msg-box{
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    
+    .msg-txt-area textarea{
+        width: 50vw;
+    }
+
+    .gallery{
+        gap: 10px;
+    }
+    .gallery-img img{
+        width: 30vw;
+        height: 180px;
+        overflow: hidden;
+    }
+    .company-heading{
+        padding-left: 20px;
+    }
+    .company-heading, .skills-heading{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar, .hero, .about, .message, .networth-hero, .networth-chart{
+        padding: 25px;
+    }
+    .gallery, .company-heading, .skills-heading, .skills{
+        padding: 25px;
+    }
+    
+    .about-icon{
+        margin-right: 20px;
+    }
+    .msg-box{
+        grid-template-columns: auto;
+    }
+    .msg-txt-area textarea{
+        width: 80vw;
+    }
+
+    .company-heading{
+        padding-left: 20px;
+    }
+    .company-heading, .skills-heading{
+        padding-bottom: 0;
+    }
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .gallery-img img{
+        width: 87vw;
+        height: 300px;
+        overflow: hidden;
+    }
+}
